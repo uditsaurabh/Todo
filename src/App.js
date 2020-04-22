@@ -1,24 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+//import logo from './logo.svg';
+import "./App.css";
+import StudentDisplay from "./components/studentpage";
+import NavBar from "./components/NavBar";
+import BookList from "./components/BookList";
+import BasicContextComponent from "./components/BasicContext";
+import Welcome from "./components/Welcome";
+import TodoApp from "./todocomponents/TodoApp";
+import AddTodo from "./todocomponents/AddTodo";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <TodoApp></TodoApp>
     </div>
   );
 }
